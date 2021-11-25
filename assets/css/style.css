@@ -8,3 +8,9 @@ body{
     background: url("../img/bg.jpg") no-repeat center center;
     background-size: cover;
 }
+
+fieldset legend {
+    font-size: 30px;
+    color:darkgreen;
+    font-family: 'Shadows Into Light', cursive; 
+}
