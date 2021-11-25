@@ -14,3 +14,35 @@ fieldset legend {
     color:darkgreen;
     font-family: 'Shadows Into Light', cursive; 
 }
+
+.input-custom{
+    transition: 0.3s;
+    padding: 3px 12px;
+    border-radius: 7px;
+}
+
+.input-custom:focus {
+    border: 0;
+    background-color: rgb(182, 181, 181);
+}
+
+.cadastrar {
+    border-radius: 15px;
+    border: 0;
+    padding: 5px 10px;
+    background-color: rgb(37, 95, 95);
+    transition: 0.6s;
+}
+
+.cadastrar:hover {
+    padding: 8px 16px;
+    background-color: rgb(17, 19, 121);
+    color: rgb(18, 156, 18);
+}
+
+.limpar {
+    border-radius: 15px;
+    border: 0;
+    padding: 5px 10px;
+    background-color: rgb(132, 155, 32);
+}

@@ -23,14 +23,14 @@
            <fieldset>
                 <legend>Dados do Usuário</legend>
 
-                <label>Nome:</label>
-                <input type="text">
+                <label id="username">Nome:</label>
+                <input class="input-custom" type="username" id="username">
 
                 <label>E-mail:</label>
-                <input type="email">
+                <input class="input-custom" type="email">
 
-                <label>Telefone:</label>
-                <input type="tel">
+                <label for="tel">Telefone:</label>
+                <input class="input-custom" type="tel">
 
                 <label>Data de Nascimento</label>
                 <input type="date">
@@ -115,6 +115,8 @@
                     
             </fieldset>
        </form>
+       <button type="reset" class="limpar">Limpar</button>
+       <button type="submit" class="cadastrar">Cadastrar</button>
    </main>
 </body>
 </html>
