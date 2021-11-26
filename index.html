@@ -50,10 +50,17 @@
 
                 <fieldset class="inner-fieldset">
                     <legend>Você concorda com os termos de uso?</legend>
-                    <input type="radio" name="terms" id="yes">
-                    <label for="yes">Sim</label>
-                    <input type="radio" name="terms" id="no">
-                    <label for="no">Não</label>
+                    <div class="row">
+                        <div>
+                            <input type="radio" name="terms" id="yes">
+                            <label for="yes">Sim</label>
+                        </div>
+                       
+                        <div>
+                            <input type="radio" name="terms" id="no">
+                            <label for="no">Não</label>
+                        </div>
+                    </div>
                 </fieldset>
 
 
@@ -93,14 +100,23 @@
                 <!-- ATRIBUTOS -->
                 <div class="atributos">
                     <h1>Atributos:</h1>
-                    <label for="forca">Força</label>
-                    <input type="number">
-
-                    <label for="intelecto">Intelecto</label>
-                    <input type="number">
-
-                    <label for="agilidade">Agilidade</label>
-                    <input type="number">
+                    
+                    <div class="row">
+                        <div class="col-33">
+                            <label for="forca">Força</label>
+                            <input type="number">
+                        </div>
+                        
+                        <div class="col-33">
+                            <label for="intelecto">Intelecto</label>
+                            <input type="number">
+                        </div>
+                        
+                        <div class="col-33">
+                            <label for="agilidade">Agilidade</label>
+                            <input type="number">
+                        </div>
+                    </div>
                 </div>
 
 
