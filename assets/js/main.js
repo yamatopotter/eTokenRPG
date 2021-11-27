@@ -1,6 +1,6 @@
 console.log("MAIN.JS - CARREGADO");
 
-var skillCheckboxes = document.querySelectorAll("input.skillCheckbox");
+var skillCheckboxes = document.querySelectorAll(".skillCheckbox");
 let skillLimit = 3;
 
 console.log(skillCheckboxes.length);
