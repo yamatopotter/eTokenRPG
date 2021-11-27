@@ -2,6 +2,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Poppins:wght@300;400;700&display=swap');
 
+@keyframes backgroundColorLogo{
+    0%{
+        background:#6c7a89;
+    }
+    20%{
+        background: #95a5a6;
+    }
+    40%{
+        background: #2e3131;
+    }
+    60%{
+        background: #000;
+    }
+    80%{
+        background: #2e3131;
+    }
+    100%{
+        background: #95a5a6;
+    }
+}
+
 *{
     margin:0;
     padding: 0;
@@ -30,6 +51,31 @@
     display: flex;
     flex-direction: column;
     width:25%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon{
+    display: flex;
+    flex-flow: column;
+    padding: 15px;
+}
+
+.logo-icon .bar{
+    display:block;
+    /* background: linear-gradient(45deg, #6c7a89, #000); */
+    animation: backgroundColorLogo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 30px;
+    height: 10px;
+    transform: rotate(-30deg);
+    margin: 3px 0;
+    transition: .3s ease-in-out all;
 }
 
 input, select{
