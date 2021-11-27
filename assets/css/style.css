@@ -4,10 +4,10 @@
 
 @keyframes backgroundColorLogo{
     0%{
-        background:#6c7a89;
+        background: #95a5a6;
     }
     33%{
-        background: #95a5a6;
+        background:#6c7a89;
     }
     66%{
         background: #2e3131;
@@ -107,7 +107,7 @@ main{
 
 .main-header .logo-icon .bar{
     display:block;
-    animation: backgroundColorLogo 10s infinite alternate;
+    animation: backgroundColorLogo 3s infinite alternate;
     width: 30px;
     height: 10px;
     transform: rotate(-30deg);
