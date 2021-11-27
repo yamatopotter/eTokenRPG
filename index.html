@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">    
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>eToken RPG</title>
 </head>
 
@@ -13,6 +13,12 @@
 
     <header>
         <h1>eToken Rpg</h1>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Criar eToken</a></li>
+        </ul>
     </header>
 
     <main>
@@ -26,7 +32,7 @@
                 <div class="row">
                     <div class="col-50">
                         <label for="username">Nome:</label>
-                        <input class="input-custom" type="username" id="username" name="username" >
+                        <input class="input-custom" type="username" id="username" name="username">
                     </div>
 
                     <div class="col-50">
@@ -43,7 +49,8 @@
 
                     <div class="col-50">
                         <label>Data de Nascimento</label>
-                        <input type="date" id="dataNascimento" name="dataNascimento" class="input-custom">
+                        <input type="date" id="dataNascimento" name="dataNascimento" class="input-custom"
+                            onfocusout="olderThan18()">
                     </div>
                 </div>
 
@@ -57,7 +64,7 @@
                             <input type="radio" name="terms" id="yes">
                             <label for="yes">Sim</label>
                         </div>
-                       
+
                         <div>
                             <input type="radio" name="terms" id="no">
                             <label for="no">Não</label>
@@ -84,7 +91,7 @@
                             <option value="Anao">Anão</option>
                         </select>
                     </section>
-                   
+
 
                     <!-- SELECT COM ESCOLHA DE CLASSES -->
                     <section class="characterJob col-50">
@@ -103,18 +110,18 @@
                 <!-- ATRIBUTOS -->
                 <section class="characterAttributes">
                     <h1>Atributos:</h1>
-                    
+
                     <div class="row">
                         <div class="col-33">
                             <label for="forca">Força</label>
                             <input type="number" class="input-custom">
                         </div>
-                        
+
                         <div class="col-33">
                             <label for="intelecto">Intelecto</label>
                             <input type="number" class="input-custom">
                         </div>
-                        
+
                         <div class="col-33">
                             <label for="agilidade">Agilidade</label>
                             <input type="number" class="input-custom">
@@ -124,38 +131,60 @@
 
 
                 <!-- CHECKBOX SKILLS -->
-                <section class="characterSkills">
-                    <h1>Perícias</h1>
-                    <p>Selecione 3 perícias:</p>
-                    <input type="checkbox" id="skill" name="acrobacias" value="acrobacias" class="skillCheckbox">
-                        <label for="acrobacias"> Acrobacias</label><br>
-                    <input type="checkbox" id="skill" name="furtividade" value="furtividade" class="skillCheckbox">
-                        <label for="furtividade"> Furtividade</label><br>
-                    <input type="checkbox" id="skill" name="intimidar" value="intimidar" class="skillCheckbox">
-                        <label for="intimidar"> Intimidar</label><br>
-                    <input type="checkbox" id="skill" name="percepcao" value="percepcao" class="skillCheckbox">
-                        <label for="percepcao"> Percepção</label><br>
-                    <input type="checkbox" id="skill" name="primeirosSocorros" value="primeirosSocorros" class="skillCheckbox">
-                        <label for="primeirosSocorros"> Primeiros Socorros</label><br>
-                    <input type="checkbox" id="skill" name="religiao" value="religiao" class="skillCheckbox">
-                        <label for="religiao"> Religião</label>
-                </section>
+                <div class="row">
+                    <section class="characterSkills col-50">
+                        <h1>Perícias</h1>
+                        <p>Selecione 3 perícias:</p>
+                        <div>
+                            <input type="checkbox" id="skill" name="acrobacias" value="acrobacias"
+                                class="skillCheckbox">
+                            <label for="acrobacias"> Acrobacias</label>
+                        </div>
 
-                <!-- HABILIDADES DO PERSONAGEM -->
-                <div class="habilidades">
-                    <h1>Habilidades</h1>
-                    <p>Descreva as habilidades do seu personagem:</p>
-                    <textarea id="habilidades" name="habilidades" rows="10" cols="20">
+                        <div>
+                            <input type="checkbox" id="skill" name="furtividade" value="furtividade"
+                                class="skillCheckbox">
+                            <label for="furtividade"> Furtividade</label><br>
+                        </div>
 
-                            </textarea>
+                        <div>
+                            <input type="checkbox" id="skill" name="intimidar" value="intimidar" class="skillCheckbox">
+                            <label for="intimidar"> Intimidar</label><br>
+                        </div>
 
+                        <div>
+                            <input type="checkbox" id="skill" name="percepcao" value="percepcao" class="skillCheckbox">
+                            <label for="percepcao"> Percepção</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skill" name="primeirosSocorros" value="primeirosSocorros"
+                                class="skillCheckbox">
+                            <label for="primeirosSocorros"> Primeiros Socorros</label><br>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skill" name="religiao" value="religiao" class="skillCheckbox">
+                            <label for="religiao"> Religião</label>
+                        </div>
+                    </section>
+
+                    <!-- HABILIDADES DO PERSONAGEM -->
+                    <section class="characterAbilities col-50">
+                        <h1>Habilidades</h1>
+                        <p>Descreva as habilidades do seu personagem:</p>
+                        <textarea id="habilidades" name="habilidades"></textarea>
+
+                    </section>
                 </div>
             </fieldset>
 
             <button type="reset" class="limpar">Limpar</button>
-            <button type="submit" class="cadastrar">Cadastrar</button>
+            <button type="submit" class="cadastrar" id="btnCadastrar">Cadastrar</button>
         </form>
     </main>
+
+    <footer>
+        <p>Todos os direitos reservados à eTokenRPG, 2021.</p>
+    </footer>
 
     <script src="./assets/js/main.js"></script>
 </body>
