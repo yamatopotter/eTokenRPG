@@ -50,7 +50,6 @@ body{
 }
 
 header{
-    background-color: rgba(30,30,30,1);
     color: #efefef;
     position: fixed;
     width: 100%;
@@ -59,7 +58,7 @@ header{
 main{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 100px 0;
 }    
 
 .main-title{
@@ -72,6 +71,46 @@ main{
     padding:20px;
     margin:20px auto;
 }
+
+/* MAIN HEADER */
+
+.main-header{
+    position: fixed;
+    background-color: #efefef;
+    color: rgba(30,30,30,1);
+    /* width: 350px; */
+    /* margin-left: 50px; */
+}
+
+.main-header span{
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    width: 300px;
+    margin-left: 30px;
+    /* background-color: black; */
+    
+}
+
+.menu li{
+    padding-right: 10px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 
 /* Formulário */
 
@@ -126,12 +165,22 @@ main{
     height: 150px;
 }
 
+
+/* Botões */
+
+.buttons{
+    padding-left: 500px;
+}
+
 .cadastrar {
-    border-radius: 15px;
+    /* border-radius: 15px; */
     border: 0;
     padding: 5px 10px;
-    background-color: rgb(37, 95, 95);
+    background-color: #efefef;
     transition: 0.6s;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .cadastrar:hover {
@@ -141,10 +190,21 @@ main{
 }
 
 .limpar {
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
     border: 0;
     padding: 5px 10px;
-    background-color: rgb(132, 155, 32);
+    background-color: #efefef;
+    transition: 0.6s;
+ 
+}
+
+.limpar:hover {
+    padding: 8px 16px;
+    background-color: rgb(17, 19, 121);
+    color: rgb(18, 156, 18);
 }
 
 footer{
