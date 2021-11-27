@@ -49,10 +49,28 @@ body{
     background-size: cover;
 }
 
-header, main{
+header{
+    background-color: rgba(30,30,30,1);
+    color: #efefef;
+    position: fixed;
+    width: 100%;
+}
+
+main{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
+}    
+
+.main-title{
+    background-color: #efefef;
+    width: fit-content;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding:20px;
+    margin:20px auto;
 }
 
 /* Formulário */
