@@ -18,6 +18,6 @@ function skillLimitSelection(event){
         return false;
     }
     else{
-        console.log("Habilidade adicionada a lista");
+        console.log("Habilidade adicionada/removida à lista");
     }
 }

@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="./assets/css/style.css">    
     <title>eToken RPG</title>
 </head>
 
@@ -22,8 +20,8 @@
             com internet.</p>
         <form>
             <!-- DADOS DO JOGADOR -->
-            <fieldset>
-                <legend>Dados do Usuário</legend>
+            <fieldset class="main-fieldset">
+                <legend class="main-fieldset-title">Dados do Usuário</legend>
 
                 <div class="row">
                     <div class="col-50">
@@ -51,6 +49,9 @@
 
                 <fieldset class="inner-fieldset">
                     <legend>Você concorda com os termos de uso?</legend>
+
+                    <iframe src="./termos.html" title="Termos de Uso" class="iframe-termos" id="iframe-termos"></iframe>
+
                     <div class="row">
                         <div>
                             <input type="radio" name="terms" id="yes">
@@ -69,60 +70,61 @@
             </fieldset>
 
             <!-- DADOS DO PERSONAGEM -->
-            <fieldset>
-                <legend>Dados do Personagem</legend>
+            <fieldset class="main-fieldset">
+                <legend class="main-fieldset-title">Dados do Personagem</legend>
 
 
                 <div class="row">
                     <!-- SELECT COM ESCOLHA DE RAÇAS -->
-                    <div class="col-50">
+                    <section class="characterRace col-50">
                         <label for="raca">Escolha sua raça:</label>
-                        <select name="raca" id="raca" form="formRaca">
+                        <select name="raca" id="raca" form="formRaca" class="input-custom">
                             <option value="Humano">Humano</option>
                             <option value="Elfo">Elfo</option>
                             <option value="Anao">Anão</option>
                         </select>
-                    </div>
+                    </section>
+                   
 
                     <!-- SELECT COM ESCOLHA DE CLASSES -->
-                    <div class="col-50">
+                    <section class="characterJob col-50">
                         <label for="classes">Escolha sua classe:</label>
-                        <select name="classes" id="classes" form="formClasses">
+                        <select name="classes" id="classes" form="formClasses" class="input-custom">
                             <option value="Guerreiro">Guerreiro</option>
                             <option value="Mago">Mago</option>
                             <option value="Ladino">Ladino</option>
                             <option value="Clerigo">Clérigo</option>
                         </select>
-                    </div>
+                    </section>
                 </div>
 
 
 
                 <!-- ATRIBUTOS -->
-                <div class="atributos">
+                <section class="characterAttributes">
                     <h1>Atributos:</h1>
                     
                     <div class="row">
                         <div class="col-33">
                             <label for="forca">Força</label>
-                            <input type="number">
+                            <input type="number" class="input-custom">
                         </div>
                         
                         <div class="col-33">
                             <label for="intelecto">Intelecto</label>
-                            <input type="number">
+                            <input type="number" class="input-custom">
                         </div>
                         
                         <div class="col-33">
                             <label for="agilidade">Agilidade</label>
-                            <input type="number">
+                            <input type="number" class="input-custom">
                         </div>
                     </div>
-                </div>
+                </section>
 
 
                 <!-- CHECKBOX SKILLS -->
-                <div class="skills">
+                <section class="characterSkills">
                     <h1>Perícias</h1>
                     <p>Selecione 3 perícias:</p>
                     <input type="checkbox" id="skill" name="acrobacias" value="acrobacias" class="skillCheckbox">
@@ -137,7 +139,7 @@
                         <label for="primeirosSocorros"> Primeiros Socorros</label><br>
                     <input type="checkbox" id="skill" name="religiao" value="religiao" class="skillCheckbox">
                         <label for="religiao"> Religião</label>
-                </div>
+                </section>
 
                 <!-- HABILIDADES DO PERSONAGEM -->
                 <div class="habilidades">
