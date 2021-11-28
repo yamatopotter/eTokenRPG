@@ -20,7 +20,7 @@
             </div>
             <h1>eToken RPG</h1>
         </div>
-   
+
         <nav>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
@@ -31,65 +31,82 @@
     </header>
 
     <main>
-        <h1 class="main-title-ficha">Nome do Jogador</h1>
-        <form>
-            <!-- DADOS DO JOGADOR -->
-            <fieldset class="main-fieldset-ficha">
-                <legend class="main-fieldset-ficha-title">Nome do Personagem</legend>
-                
-                <div class="dados-personagem">
-                <h1>Anão</h1>
-                <h1>Guerreiro</h1>
-                <h1>Nível: 3</h1>             
+        <h1 class="player-name">Nome do Jogador</h1>
+
+        <section class="token-data">
+            <h1 class="character-name">Nome do Personagem</h1>
+
+            <section class="character-data row">
+
+                <div class="col-20">
+                    <div class="row">
+                        <img src="./assets/img/race.png" class="character-data-icon">
+                        <h1>Anão</h1>
+                    </div>
+
+                    <div class="card">
+                        <h1>Atributos:</h1>
+                        <h2>For: 22</h2>
+                        <h2>Int: 10</h2>
+                        <h2>Agi: 12</h2>
+                    </div>
                 </div>
 
-        <div class="atributos-pericias-habilidades">
-                
-                <div class="atributos-personagem">
-                    <h1>Atributos:</h1>
-                    <h2>For: 22</h2>
-                    <h2>Int: 10</h2>
-                    <h2>Agi: 12</h2>
-                </div>
-                                
-                <div class="pericias-personagem">
-                    <h1>Perícias:</h1>
+                <div class="col-20">
+                    <div class="row">
+                        <img src="./assets/img/class.png" class="character-data-icon">
+                        <h1>Guerreiro</h1>
+                    </div>
+
+                    <div class="card">
+                        <h1>Perícias:</h1>
                         <h2>Primeiros Socorros</h2>
                         <h2>Escalar</h2>
                         <h2>Nadar</h2>
+                    </div>
                 </div>
-            
 
-                <div class="habilidades-personagem">
-                    <h1>Habilidades:</h1>
-                    <details>
-                        <summary>Esmagar Crânios</summary>
+                <div class="col-20">
+                    <div class="row">
+                        <img src="./assets/img/level.png" class="character-data-icon">
+                        <h1>Nível: 3</h1>
+                    </div>
+
+                    <div class="card">
+                        <h1>Habilidades:</h1>
+                        <details>
+                            <summary>Esmagar Crânios</summary>
                             <p>Esmaga um crânio</p>
-                    </details>
-                
-                    <details>
-                        <summary>Nome da Habilidade</summary>
+                        </details>
+
+                        <details>
+                            <summary>Nome da Habilidade</summary>
                             <p>Descrição habilidade</p>
-                    </details>
-                
-                    <details>
-                        <summary>Nome da Habilidade</summary>
+                        </details>
+
+                        <details>
+                            <summary>Nome da Habilidade</summary>
                             <p>Descrição habilidade</p>
-                    </details>
+                        </details>
+
+                        <details>
+                            <summary>Nome da Habilidade</summary>
+                            <p>Descrição habilidade</p>
+                        </details>
+
+                        <details>
+                            <summary>Nome da Habilidade</summary>
+                            <p>Descrição habilidade</p>
+                        </details>
+                    </div>
                 </div>
-                
-                <div class="img-personagem">
+
+                <div class="img-personagem col-40">
                     <img src="./assets/img/DWARF/ANÃO - GUERREIRO - MALE..png" alt="">
-
-
                 </div>
-        </div>
-            </fieldset>
+            </section>
+        </section>
 
-            <!-- DADOS DO PERSONAGEM -->
-            
-            
-        </form>
     </main>
 
     <footer>

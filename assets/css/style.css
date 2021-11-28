@@ -35,6 +35,12 @@
     width:50%;
 }
 
+.col-40{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+}
+
 .col-33{
     display: flex;
     flex-direction: column;
@@ -45,6 +51,12 @@
     display: flex;
     flex-direction: column;
     width:25%;
+}
+
+.col-20{
+    display: flex;
+    flex-direction: column;
+    width:20%;
 }
 
 input, select{
@@ -79,56 +91,6 @@ main{
     text-transform: uppercase;
     padding:20px;
     margin:20px auto;
-}
-
-.main-title-ficha{
-    background-color: #efefef;
-    width: fit-content;
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
-    text-transform: uppercase;
-    padding:20px;
-    margin:20px 0;
-}
-
-.dados-personagem{
-    display: flex;
-    justify-content: space-around;
-}
-
-.atributos-pericias-habilidades{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    padding-left: 10px;
-}
-
-.atributos-personagem{
-    flex-basis: 8%;
-    text-align: left;
-}
-
-.pericias-personagem{
-    flex-basis: 25%;
-}
-
-.habilidades-personagem{
-    flex-basis: 25%;
-}
-
-.img-personagem{
-    flex-basis: 30%;
-    padding-left: 20px;
-}
-
-.img-personagem img{
-    height: 250px;
-}
-
-summary{
-    list-style-type: '🔰';
-    cursor: pointer;
 }
 
 /* MAIN HEADER */
@@ -195,20 +157,6 @@ summary{
     box-shadow: 2px 2px 8px 3px rgba(30,30,30,1);
 }
 
-.main-fieldset-ficha{
-    margin-bottom: 20px;
-    background-color: rgba(46, 49, 49, .7);
-    color: #efefef;
-    border: 0;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    gap: 30px;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 2px 2px 8px 3px rgba(30,30,30,1);
-}
-
 .main-fieldset-ficha .main-fieldset-ficha-title{
     background-color:#000; 
     padding:10px 20px;
@@ -247,7 +195,7 @@ summary{
     font-weight: bold;
 }
 
-.characterAbilities textarea{
+.character-abilities textarea{
     margin-top: 10px;
     width: 100%;
     height: 150px;
@@ -255,10 +203,6 @@ summary{
 
 
 /* Botões */
-
-.buttons{
-    padding-left: 500px;
-}
 
 .cadastrar {
     /* border-radius: 15px; */
@@ -295,9 +239,96 @@ summary{
     color: rgb(18, 156, 18);
 }
 
+/* Footer */
+
 footer{
     text-align: center;
     color: #fff;
     background-color: #000;
     padding: 20px;
+}
+
+/* Token */
+
+.player-name{
+    background-color: #efefef;
+    width: fit-content;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding:20px;
+    margin:20px 0;
+}
+
+.character-data .row{
+    justify-content: center;
+    align-items: center;
+}
+
+.token-data{
+    margin-bottom: 20px;
+    background-color: rgba(46, 49, 49, .7);
+    color: #efefef;
+    border: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px 3px rgba(30,30,30,1);
+}
+
+.token-data .character-data-icon{
+    max-width: 48px;
+    filter:invert(100%);
+}
+
+.card{
+    background: #efefef;
+    padding: 10px;
+    color: #1e1e1e;
+    margin:20px 0;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.img-personagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-personagem img{
+    max-width: 300px;
+}
+
+.atributos-pericias-habilidades{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-left: 10px;
+}
+
+.atributos-personagem{
+    flex-basis: 8%;
+    text-align: left;
+}
+
+.pericias-personagem{
+    flex-basis: 25%;
+}
+
+.habilidades-personagem{
+    flex-basis: 25%;
+}
+
+.token-data summary{
+    list-style-type: '💫';
+    cursor: pointer;
+}
+
+.token-data summary::after{
+    content: "▼";
 }
