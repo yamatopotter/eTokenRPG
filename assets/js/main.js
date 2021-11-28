@@ -1,5 +1,3 @@
-console.log("MAIN.JS - CARREGADO");
-
 var skillCheckboxes = document.querySelectorAll(".skillCheckbox");
 var birthdatePlayer = document.getElementById("dataNascimento");
 let skillLimit = 3;

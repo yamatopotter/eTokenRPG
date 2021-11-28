@@ -93,6 +93,29 @@ main{
     margin:20px auto;
 }
 
+.btn {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 0;
+    padding: 5px 10px;
+    background-color: #efefef;
+    transition: 0.6s;
+    text-decoration: none;
+    color:  #000;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    background-color: #f9690e;
+    color: #fff;
+}
+
+.btn:disabled {
+    background-color:#bfbfbf;
+    color: #6c7a89
+}
+
 /* MAIN HEADER */
 
 .main-header{
@@ -201,44 +224,6 @@ main{
     height: 150px;
 }
 
-
-/* Botões */
-
-.cadastrar {
-    /* border-radius: 15px; */
-    border: 0;
-    padding: 5px 10px;
-    background-color: #efefef;
-    transition: 0.6s;
-    font-size: 15px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.cadastrar:hover {
-    padding: 8px 16px;
-    background-color: rgb(17, 19, 121);
-    color: rgb(18, 156, 18);
-}
-
-.limpar {
-    /* border-radius: 15px; */
-    font-size: 15px;
-    font-weight: 400;
-    text-transform: uppercase;
-    border: 0;
-    padding: 5px 10px;
-    background-color: #efefef;
-    transition: 0.6s;
- 
-}
-
-.limpar:hover {
-    padding: 8px 16px;
-    background-color: rgb(17, 19, 121);
-    color: rgb(18, 156, 18);
-}
-
 /* Footer */
 
 footer{
@@ -331,4 +316,70 @@ footer{
 
 .token-data summary::after{
     content: "▼";
+}
+
+/* Página inicial */
+
+.intro {
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+}
+
+.intro h1, .about-project h1 {
+    font-size: 48px;
+    color: #fff;
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    width: fit-content;
+    margin: 0 auto 20px;
+}
+
+.intro h2{
+    font-size: 32px;
+    color: #fff;
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    width: fit-content;
+    margin: 0 auto 20px;
+}
+
+.btn-home {
+    justify-content: center;
+}
+
+.backlog, .about{
+    background-color: rgba(46,49,49,0.7);
+    padding: 40px 20px;
+    color: white;
+}
+
+.backlog h1 {
+    font-size: 32px;
+
+}
+
+.lista-backlog {
+    padding: 20px 20px 0px;
+    list-style: none;
+}
+
+.lista-backlog h2{
+    font-size: 24px;
+}
+
+.dados-backlog {
+    padding: 20px 20px 0px;
+    margin-left: 20px;  
+}
+
+.about-project {
+    padding: 40px 20px;
+}
+
+.about-project img{
+    height: 250px;
+    display: block;
+    margin: auto;
 }
