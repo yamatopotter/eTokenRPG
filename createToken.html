@@ -32,7 +32,7 @@
 
     <main>
         <h1 class="main-title">Criação de e-Token</h1>
-        <form action="https://apolloit.com.br/processar.php" method="GET">
+        <form action="https://apolloit.com.br/eToken/ficha.php" method="post">
             <!-- DADOS DO JOGADOR -->
             <fieldset class="main-fieldset">
                 <legend class="main-fieldset-title">Dados do Usuário</legend>
@@ -93,7 +93,7 @@
                     <!-- SELECT COM ESCOLHA DE RAÇAS -->
                     <section class="characterRace col-50">
                         <label for="raca">Escolha sua raça:</label>
-                        <select name="raca" id="raca" form="formRaca" class="input-custom">
+                        <select name="raca" id="raca" class="input-custom">
                             <option value="HUMAN">Humano</option>
                             <option value="ELF">Elfo</option>
                             <option value="DWARF">Anão</option>
@@ -104,11 +104,11 @@
                     <!-- SELECT COM ESCOLHA DE CLASSES -->
                     <section class="characterJob col-50">
                         <label for="classes">Escolha sua classe:</label>
-                        <select name="classe" id="classes" form="formClasses" class="input-custom">
-                            <option value="Guerreiro">Guerreiro</option>
-                            <option value="Mago">Mago</option>
-                            <option value="Ladino">Ladino</option>
-                            <option value="Clerigo">Clérigo</option>
+                        <select name="classe" id="classes" class="input-custom">
+                            <option value="Warrior">Guerreiro</option>
+                            <option value="Wizard">Mago</option>
+                            <option value="Rogue">Ladino</option>
+                            <option value="Cleric">Clérigo</option>
                         </select>
                     </section>
                 </div>

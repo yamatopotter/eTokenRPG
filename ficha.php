@@ -11,14 +11,14 @@
 
 <body>
     <?php 
-        $name = $_GET['name'];
-        $race = strtoupper($_GET['race']);
-        $forca = $_GET['forca'];
-        $intelecto = $_GET['intelecto'];
-        $agilidade = $_GET['agilidade'];
-        $class = strtoupper($_GET['classe']);
-        // $pericias = $_GET['pericias'];
-        $habilidadesInput = $_GET['habilidades'];
+        $name = $_POST['name'];
+        $race = strtoupper($_POST['raca']);
+        $forca = $_POST['forca'];
+        $intelecto = $_POST['intelecto'];
+        $agilidade = $_POST['agilidade'];
+        $class = strtoupper($_POST['classe']);
+        $pericias = $_POST['pericias'];
+        $habilidadesInput = $_POST['habilidades'];
         $habilidades = explode("\n", str_replace("\r", "", $habilidadesInput));
     ?>
     <header class="main-header">
@@ -44,7 +44,7 @@
         <h1 class="player-name"><?php echo $name; ?></h1>
 
         <section class="token-data">
-            <h1 class="character-name">Nome do Personagem</h1>
+            <!-- <h1 class="character-name">Nome do Personagem</h1> -->
 
             <section class="character-data row">
 
