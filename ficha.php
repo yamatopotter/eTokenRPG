@@ -10,7 +10,9 @@
 </head>
 
 <body>
-
+    <?php 
+        $name = $_GET['name'];
+    ?>
     <header class="main-header">
         <div class="logo">
             <div class="logo-icon">
@@ -31,7 +33,7 @@
     </header>
 
     <main>
-        <h1 class="player-name">Nome do Jogador</h1>
+        <h1 class="player-name"><?php echo $name; ?></h1>
 
         <section class="token-data">
             <h1 class="character-name">Nome do Personagem</h1>
@@ -46,9 +48,11 @@
 
                     <div class="card">
                         <h1>Atributos:</h1>
-                        <h2>For: 22</h2>
-                        <h2>Int: 10</h2>
-                        <h2>Agi: 12</h2>
+                        <ul>
+                            <li>For: 22</li>
+                            <li>Int: 22</li>
+                            <li>Agi: 22</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -60,9 +64,11 @@
 
                     <div class="card">
                         <h1>Perícias:</h1>
-                        <h2>Primeiros Socorros</h2>
-                        <h2>Escalar</h2>
-                        <h2>Nadar</h2>
+                        <ul>
+                            <li>Escalar</li>
+                            <li>Escalar</li>
+                            <li>Escalar</li>
+                        </ul>
                     </div>
                 </div>
 

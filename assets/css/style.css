@@ -2,64 +2,68 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Poppins:wght@300;400;700&display=swap');
 
-@keyframes backgroundColorLogo{
-    0%{
+@keyframes backgroundColorLogo {
+    0% {
         background: #95a5a6;
     }
-    33%{
-        background:#6c7a89;
+
+    33% {
+        background: #6c7a89;
     }
-    66%{
+
+    66% {
         background: #2e3131;
     }
-    100%{
+
+    100% {
         background: #000;
     }
 }
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
-.row{
+.row {
     display: flex;
     gap: 20px;
 }
 
-.col-50{
+.col-50 {
     display: flex;
     flex-direction: column;
-    width:50%;
+    width: 50%;
 }
 
-.col-40{
+.col-40 {
     display: flex;
     flex-direction: column;
-    width:40%;
+    width: 40%;
 }
 
-.col-33{
+.col-33 {
     display: flex;
     flex-direction: column;
     width: 33%;
 }
 
-.col-25{
+.col-25 {
     display: flex;
     flex-direction: column;
-    width:25%;
+    width: 25%;
 }
 
-.col-20{
+.col-20 {
     display: flex;
     flex-direction: column;
-    width:20%;
+    width: 20%;
 }
 
-input, select{
+input,
+select {
     transition: 0.3s ease-in-out;
     padding: 3px 12px;
     border-radius: 4px;
@@ -67,30 +71,31 @@ input, select{
     border: 1px solid #bdc3c7;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     background-color: rgb(182, 181, 181);
 }
 
-body{
+body {
     background: url("../img/bg.jpg") no-repeat fixed center;
     background-size: cover;
 }
 
-main{
+main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
-}    
+}
 
-.main-title{
+.main-title {
     background-color: #efefef;
     width: fit-content;
     text-align: center;
     font-weight: bold;
     font-size: 3rem;
     text-transform: uppercase;
-    padding:20px;
-    margin:20px auto;
+    padding: 20px;
+    margin: 20px auto;
 }
 
 .btn {
@@ -102,7 +107,7 @@ main{
     background-color: #efefef;
     transition: 0.6s;
     text-decoration: none;
-    color:  #000;
+    color: #000;
 }
 
 .btn:hover {
@@ -112,13 +117,13 @@ main{
 }
 
 .btn:disabled {
-    background-color:#bfbfbf;
+    background-color: #bfbfbf;
     color: #6c7a89
 }
 
 /* MAIN HEADER */
 
-.main-header{
+.main-header {
     position: fixed;
     width: 100%;
     background-color: #efefef;
@@ -129,19 +134,19 @@ main{
     padding: 0 20px;
 }
 
-.main-header .logo{
+.main-header .logo {
     display: flex;
     align-items: center;
 }
 
-.main-header .logo-icon{
+.main-header .logo-icon {
     display: flex;
     flex-flow: column;
     padding: 15px;
 }
 
-.main-header .logo-icon .bar{
-    display:block;
+.main-header .logo-icon .bar {
+    display: block;
     animation: backgroundColorLogo 3s infinite alternate;
     width: 30px;
     height: 10px;
@@ -150,17 +155,17 @@ main{
     transition: .3s ease-in-out all;
 }
 
-.main-header .menu{
+.main-header .menu {
     display: flex;
     list-style-type: none;
-    gap:20px;    
+    gap: 20px;
 }
 
-.main-header .menu li{
+.main-header .menu li {
     font-size: 15px;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     color: #1e1e1e;
     font-weight: bold;
@@ -168,7 +173,7 @@ main{
 
 /* Formulário */
 
-.main-fieldset{
+.main-fieldset {
     margin-bottom: 20px;
     background-color: rgba(46, 49, 49, .7);
     color: #efefef;
@@ -177,32 +182,32 @@ main{
     flex-flow: column;
     padding: 20px;
     border-radius: 4px;
-    box-shadow: 2px 2px 8px 3px rgba(30,30,30,1);
+    box-shadow: 2px 2px 8px 3px rgba(30, 30, 30, 1);
 }
 
-.main-fieldset-ficha .main-fieldset-ficha-title{
-    background-color:#000; 
-    padding:10px 20px;
+.main-fieldset-ficha .main-fieldset-ficha-title {
+    background-color: #000;
+    padding: 10px 20px;
 }
 
 .main-fieldset legend {
     font-size: 30px;
     margin-top: 20px;
-    font-family: 'Patua One', sans-serif; 
+    font-family: 'Patua One', sans-serif;
 }
 
-.main-fieldset .main-fieldset-title{
-    background-color:#000; 
-    padding:10px 20px;
+.main-fieldset .main-fieldset-title {
+    background-color: #000;
+    padding: 10px 20px;
 }
 
-.main-fieldset .inner-fieldset{
+.main-fieldset .inner-fieldset {
     background: none;
     border: 0;
     margin-top: 20px;
 }
 
-.inner-fieldset .iframe-termos{
+.inner-fieldset .iframe-termos {
     width: 100%;
     height: 300px;
     margin: 20px 0;
@@ -210,15 +215,15 @@ main{
     border-radius: 4px;
 }
 
-.main-fieldset section{
-    margin-top:20px;
+.main-fieldset section {
+    margin-top: 20px;
 }
 
-.main-fieldset section h1{
+.main-fieldset section h1 {
     font-weight: bold;
 }
 
-.character-abilities textarea{
+.character-abilities textarea {
     margin-top: 10px;
     width: 100%;
     height: 150px;
@@ -226,7 +231,7 @@ main{
 
 /* Footer */
 
-footer{
+footer {
     text-align: center;
     color: #fff;
     background-color: #000;
@@ -235,23 +240,23 @@ footer{
 
 /* Token */
 
-.player-name{
+.player-name {
     background-color: #efefef;
     width: fit-content;
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
     text-transform: uppercase;
-    padding:20px;
-    margin:20px 0;
+    padding: 20px;
+    margin: 20px 0;
 }
 
-.character-data .row{
+.character-data .row {
     justify-content: center;
     align-items: center;
 }
 
-.token-data{
+.token-data {
     margin-bottom: 20px;
     background-color: rgba(46, 49, 49, .7);
     color: #efefef;
@@ -262,59 +267,65 @@ footer{
     gap: 20px;
     padding: 20px;
     border-radius: 4px;
-    box-shadow: 2px 2px 8px 3px rgba(30,30,30,1);
+    box-shadow: 2px 2px 8px 3px rgba(30, 30, 30, 1);
 }
 
-.token-data .character-data-icon{
+.token-data .character-data-icon {
     max-width: 48px;
-    filter:invert(100%);
+    filter: invert(100%);
 }
 
-.card{
+.card {
     background: #efefef;
     padding: 10px;
     color: #1e1e1e;
-    margin:20px 0;
+    margin: 20px 0;
     height: 100%;
     border-radius: 4px;
 }
 
-.img-personagem{
+.card ul{
+    display: block;
+    padding: 0 20px;
+    list-style: none;
+}
+
+.img-personagem {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.img-personagem img{
+.img-personagem img {
     max-width: 300px;
 }
 
-.atributos-pericias-habilidades{
+.atributos-pericias-habilidades {
     display: flex;
     flex-direction: row;
     gap: 50px;
     padding-left: 10px;
 }
 
-.atributos-personagem{
+.atributos-personagem {
     flex-basis: 8%;
     text-align: left;
 }
 
-.pericias-personagem{
+.pericias-personagem {
     flex-basis: 25%;
 }
 
-.habilidades-personagem{
+.habilidades-personagem {
     flex-basis: 25%;
 }
 
-.token-data summary{
+.token-data summary {
     list-style-type: '💫';
     cursor: pointer;
 }
 
-.token-data summary::after{
+.token-data summary::after {
     content: "▼";
 }
 
@@ -327,7 +338,8 @@ footer{
     flex-flow: column;
 }
 
-.intro h1, .about-project h1 {
+.intro h1,
+.about-project h1 {
     font-size: 48px;
     color: #fff;
     background-color: #1e1e1e;
@@ -336,7 +348,7 @@ footer{
     margin: 0 auto 20px;
 }
 
-.intro h2{
+.intro h2 {
     font-size: 32px;
     color: #fff;
     background-color: #1e1e1e;
@@ -349,8 +361,9 @@ footer{
     justify-content: center;
 }
 
-.backlog, .about{
-    background-color: rgba(46,49,49,0.7);
+.backlog,
+.about {
+    background-color: rgba(46, 49, 49, 0.7);
     padding: 40px 20px;
     color: white;
 }
@@ -365,21 +378,31 @@ footer{
     list-style: none;
 }
 
-.lista-backlog h2{
+.lista-backlog h2 {
     font-size: 24px;
 }
 
 .dados-backlog {
     padding: 20px 20px 0px;
-    margin-left: 20px;  
+    margin-left: 20px;
 }
 
 .about-project {
     padding: 40px 20px;
 }
 
-.about-project img{
+.about-project img {
     height: 250px;
     display: block;
     margin: auto;
+}
+
+/* Sobre */
+
+.about{
+    gap:20px;
+}
+
+.about p{
+    line-height: 24px;
 }
