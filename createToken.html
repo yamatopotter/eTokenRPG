@@ -32,7 +32,7 @@
 
     <main>
         <h1 class="main-title">Criação de e-Token</h1>
-        <form action="ficha.php" method="GET">
+        <form action="http://apolloit.com.br/ficha.php" method="GET">
             <!-- DADOS DO JOGADOR -->
             <fieldset class="main-fieldset">
                 <legend class="main-fieldset-title">Dados do Usuário</legend>
@@ -94,9 +94,9 @@
                     <section class="characterRace col-50">
                         <label for="raca">Escolha sua raça:</label>
                         <select name="raca" id="raca" form="formRaca" class="input-custom">
-                            <option value="Humano">Humano</option>
-                            <option value="Elfo">Elfo</option>
-                            <option value="Anao">Anão</option>
+                            <option value="HUMAN">Humano</option>
+                            <option value="ELF">Elfo</option>
+                            <option value="DWARF">Anão</option>
                         </select>
                     </section>
 
@@ -104,7 +104,7 @@
                     <!-- SELECT COM ESCOLHA DE CLASSES -->
                     <section class="characterJob col-50">
                         <label for="classes">Escolha sua classe:</label>
-                        <select name="classes" id="classes" form="formClasses" class="input-custom">
+                        <select name="classe" id="classes" form="formClasses" class="input-custom">
                             <option value="Guerreiro">Guerreiro</option>
                             <option value="Mago">Mago</option>
                             <option value="Ladino">Ladino</option>
@@ -122,17 +122,17 @@
                     <div class="row">
                         <div class="col-33">
                             <label for="forca">Força</label>
-                            <input type="number" class="input-custom">
+                            <input type="number" class="input-custom" id="forca" name="forca">
                         </div>
 
                         <div class="col-33">
                             <label for="intelecto">Intelecto</label>
-                            <input type="number" class="input-custom">
+                            <input type="number" class="input-custom" id="intelecto" name="intelecto">
                         </div>
 
                         <div class="col-33">
                             <label for="agilidade">Agilidade</label>
-                            <input type="number" class="input-custom">
+                            <input type="number" class="input-custom" id="agilidade" name="agilidade">
                         </div>
                     </div>
                 </section>
@@ -144,33 +144,33 @@
                         <h1>Perícias</h1>
                         <p>Selecione 3 perícias:</p>
                         <div>
-                            <input type="checkbox" id="skill" name="acrobacias" value="acrobacias"
+                            <input type="checkbox" id="acrobacias" name="pericias[]" value="Acrobacias"
                                 class="skillCheckbox">
                             <label for="acrobacias"> Acrobacias</label>
                         </div>
 
                         <div>
-                            <input type="checkbox" id="skill" name="furtividade" value="furtividade"
+                            <input type="checkbox" id="furtividade" name="pericias[]" value="Furtividade"
                                 class="skillCheckbox">
                             <label for="furtividade"> Furtividade</label><br>
                         </div>
 
                         <div>
-                            <input type="checkbox" id="skill" name="intimidar" value="intimidar" class="skillCheckbox">
+                            <input type="checkbox" id="intimidar" name="pericias[]" value="Intimidar" class="skillCheckbox">
                             <label for="intimidar"> Intimidar</label><br>
                         </div>
 
                         <div>
-                            <input type="checkbox" id="skill" name="percepcao" value="percepcao" class="skillCheckbox">
+                            <input type="checkbox" id="percepcao" name="pericias[]" value="Percepção" class="skillCheckbox">
                             <label for="percepcao"> Percepção</label><br>
                         </div>
                         <div>
-                            <input type="checkbox" id="skill" name="primeirosSocorros" value="primeirosSocorros"
+                            <input type="checkbox" id="primeirosSocorros" name="pericias[]" value="Primeiros Socorros"
                                 class="skillCheckbox">
                             <label for="primeirosSocorros"> Primeiros Socorros</label><br>
                         </div>
                         <div>
-                            <input type="checkbox" id="skill" name="religiao" value="religiao" class="skillCheckbox">
+                            <input type="checkbox" id="religiao" name="pericias[]" value="Religião" class="skillCheckbox">
                             <label for="religiao"> Religião</label>
                         </div>
                     </section>

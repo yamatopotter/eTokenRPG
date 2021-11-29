@@ -12,6 +12,15 @@
 <body>
     <?php 
         $name = $_GET['name'];
+        $race = strtoupper($_GET['race']);
+        $forca = $_GET['forca'];
+        $intelecto = $_GET['intelecto'];
+        $agilidade = $_GET['agilidade'];
+        $class = strtoupper($_GET['classe']);
+        $pericias = $_GET['pericias'];
+        $habilidadesInput = $_GET['habilidades'];
+        $habilidades = explode("\n", str_replace("\r", "", $habilidadesInput));
+
     ?>
     <header class="main-header">
         <div class="logo">
@@ -43,15 +52,15 @@
                 <div class="col-20">
                     <div class="row">
                         <img src="./assets/img/race.png" class="character-data-icon">
-                        <h1>Anão</h1>
+                        <h1><?php echo ucfirst($race); ?> </h1>
                     </div>
 
                     <div class="card">
                         <h1>Atributos:</h1>
                         <ul>
-                            <li>For: 22</li>
-                            <li>Int: 22</li>
-                            <li>Agi: 22</li>
+                            <li>For: <?php echo $forca; ?></li>
+                            <li>Int: <?php echo $intelecto; ?></li>
+                            <li>Agi: <?php echo $agilidade ;?></li>
                         </ul>
                     </div>
                 </div>
@@ -59,15 +68,17 @@
                 <div class="col-20">
                     <div class="row">
                         <img src="./assets/img/class.png" class="character-data-icon">
-                        <h1>Guerreiro</h1>
+                        <h1><?php echo ucfirst($class);?></h1>
                     </div>
 
                     <div class="card">
                         <h1>Perícias:</h1>
                         <ul>
-                            <li>Escalar</li>
-                            <li>Escalar</li>
-                            <li>Escalar</li>
+                            <?php
+                                foreach($pericias as $pericia){
+                                    echo "<li>$pericia</li>"
+                                }
+                            ?>
                         </ul>
                     </div>
                 </div>
@@ -75,40 +86,28 @@
                 <div class="col-20">
                     <div class="row">
                         <img src="./assets/img/level.png" class="character-data-icon">
-                        <h1>Nível: 3</h1>
+                        <h1>Nível: 1</h1>
                     </div>
 
                     <div class="card">
                         <h1>Habilidades:</h1>
+
+                        <?php
+                            $count = 0;
+                            while($count < count($habilidades)):
+                        ?>
+                        
                         <details>
-                            <summary>Esmagar Crânios</summary>
-                            <p>Esmaga um crânio</p>
+                            <summary><?php echo $habilidades[$count]; ?></summary>
+                            <p><?php echo $habilidades[$count+1]; ?></p>
                         </details>
 
-                        <details>
-                            <summary>Nome da Habilidade</summary>
-                            <p>Descrição habilidade</p>
-                        </details>
-
-                        <details>
-                            <summary>Nome da Habilidade</summary>
-                            <p>Descrição habilidade</p>
-                        </details>
-
-                        <details>
-                            <summary>Nome da Habilidade</summary>
-                            <p>Descrição habilidade</p>
-                        </details>
-
-                        <details>
-                            <summary>Nome da Habilidade</summary>
-                            <p>Descrição habilidade</p>
-                        </details>
+                        <?php $count += 2; endwhile; ?>
                     </div>
                 </div>
 
                 <div class="img-personagem col-40">
-                    <img src="./assets/img/DWARF/ANÃO - GUERREIRO - MALE..png" alt="">
+                    <img src="./assets/img/<?php echo "$race/$race-$class.png"; ?>" alt="">
                 </div>
             </section>
         </section>
