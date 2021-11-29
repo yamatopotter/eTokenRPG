@@ -17,10 +17,9 @@
         $intelecto = $_GET['intelecto'];
         $agilidade = $_GET['agilidade'];
         $class = strtoupper($_GET['classe']);
-        $pericias = $_GET['pericias'];
+        // $pericias = $_GET['pericias'];
         $habilidadesInput = $_GET['habilidades'];
         $habilidades = explode("\n", str_replace("\r", "", $habilidadesInput));
-
     ?>
     <header class="main-header">
         <div class="logo">
@@ -76,7 +75,7 @@
                         <ul>
                             <?php
                                 foreach($pericias as $pericia){
-                                    echo "<li>$pericia</li>"
+                                    echo "<li>$pericia</li>";
                                 }
                             ?>
                         </ul>
@@ -94,7 +93,7 @@
 
                         <?php
                             $count = 0;
-                            while($count < count($habilidades)):
+                            while($count < count($habilidades)){
                         ?>
                         
                         <details>
@@ -102,7 +101,7 @@
                             <p><?php echo $habilidades[$count+1]; ?></p>
                         </details>
 
-                        <?php $count += 2; endwhile; ?>
+                        <?php $count += 2;} ?>
                     </div>
                 </div>
 
